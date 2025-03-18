@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumex Ventures - Premium Nylon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background: black;
+            padding: 20px;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        h1, h2, p {
+            color: white;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+        }
+
+        .hero {
+            padding: 20px;
+            background: black;
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .order-form {
+            background: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 10px #00ff00;
+            border: 2px solid #00ff00;
+        }
+
+        .order-form input, .order-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: black;
+            color: white;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 5px #00ff00;
+        }
+
+        button {
+            background: cyan;
+            color: black;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px cyan;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00ff00;
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        .seller-info {
+            background: black;
+            padding: 20px;
+            box-shadow: 0 0 10px #00ff00;
+            border: 2px solid #00ff00;
+        }
+
+        .seller-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .slideshow {
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            position: relative;
+            box-shadow: 0 0 10px cyan;
+            border: 2px solid cyan;
+        }
+
+        .slideshow img {
+            width: 100%;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="greetingAudio" autoplay>
+    <source src="greeting.mp3" type="audio/mp3">
+</audio>
+
+<div class="seller-info">
+    <h3>Seller Information</h3>
+    <img src="seller.jpg" alt="Seller Image">
+    <p><strong>Name:</strong> Inumidun Grace</p>
+    <p><strong>Address:</strong> 1A, Prince Rotimi Ogunleye Street, Oloja Igbe Laara, Off Iyalaje Road, Ikorodu, Lagos</p>
+    <p><strong>WhatsApp:</strong> 08039285527</p>
+    <p><strong>Call:</strong> 08156124131</p>
+    <p><strong>Email:</strong> inumidungrace02@gmail.com</p>
+</div>
+
+<header>
+    <h1>Welcome to Jumex Ventures</h1>
+    <p>Quality Nylons for Every Need</p>
+</header>
+
+<section class="hero">
+    <h2>Premium Nylon for Every Use</h2>
+    <p>Durable | Affordable | Reliable</p>
+</section>
+
+<div class="slideshow">
+    <img src="nylon1.jpg" class="active">
+    <img src="nylon2.jpg">
+    <img src="nylon3.jpg">
+    <img src="nylon4.jpg">
+    <img src="nylon5.jpg">
+    <img src="nylon6.jpg">
+    <img src="nylon7.jpg">
+</div>
+
+<section class="order-form">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">WhatsApp Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" required>
+
+        <label>Urgency:</label>
+        <select id="urgency">
+            <option value="now">I need it now</option>
+            <option value="tomorrow">I need it before tomorrow</option>
+            <option value="week">I need it within three days</option>
+        </select>
+
+        <label>Choose Nylon Type:</label>
+        <div class="nylon-options">      
+       <p>Choose the type of nylon you want by clicking the white small boxes</p>
+
+                <label><input type="checkbox" value="Black Orebe Small"> Black Orebe Small</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Black Orebe Big"> Black Orebe Big</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Handless Black"> Handless Black</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Handless White (Semo)"> Handless White (Semo)</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Polybag Big"> Polybag Big</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Polybag Small"> Polybag Small</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Yodi"> Yodi</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Moi-Moi"> Moi-Moi</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Ice Block"> Ice Block</label>
+                <input type="text" placeholder="Write your quantity">
+                
+                <label><input type="checkbox" value="Pepper"> Pepper</label>
+                <input type="text" placeholder="Write your quantity">
+            </div>
+
+        <p>Didn't find the type of nylon you want? Kindly indicate below 👇👇👇</p>
+
+            <input type="text" id="otherDetails" placeholder="Type other nylon & quantity here">
+        </div>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<footer>
+    <p>Jumex Ventures - Quality Nylons, Reliable Service</p>
+</footer>
+    
+<script>
+document.getElementById("orderForm").onsubmit = function(event) {
+    event.preventDefault(); // Prevent form from refreshing
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let urgency = document.getElementById("urgency").value;
+    let nylonDetails = [];
+
+    // Correct selection of nylon checkboxes and quantities
+    document.querySelectorAll(".nylon-options label").forEach(label => {
+        let checkbox = label.querySelector("input[type=checkbox]");
+        let quantityInput = label.nextElementSibling;
+
+        if (checkbox.checked && quantityInput.value.trim() !== "") {
+            nylonDetails.push(`${checkbox.value} - ${quantityInput.value.trim()}`);
+        }
+    });
+
+    let otherDetails = document.getElementById("otherDetails").value.trim() || "N/A";
+
+    let orderDetails = {
+        name, phone, address, urgency, nylonDetails, otherDetails
+    };
+
+    // Store order details in sessionStorage for use on the success page
+    sessionStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+
+    // **Force Redirect to Success Page**
+    window.location.href = "success.html"; 
+};
+let slides = document.querySelectorAll(".slideshow img");
+let currentSlide = 0;
+
+function showSlide() {
+    slides.forEach((slide, index) => {
+        slide.classList.remove("active");
+        if (index === currentSlide) slide.classList.add("active");
+    });
+    currentSlide = (currentSlide + 1) % slides.length;
+}
+
+setInterval(showSlide, 3000);
+</script>
+
+</body>
+</html>
